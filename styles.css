@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: #52575d;
+}
+
+.yellow {
+    color: #ffd369;
+}
+
+.cw {
+    margin-left: 10%;
+
+}
+
+.cw-stat,
+.time-stat {
+    font-size: 3rem;
+}
+
+.container {
+    width: 60%;
+}
+
+.parent {
+    min-height: 3.5rem;
+}
+
+.para {
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+.input {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding-top: 10px;
+
+}
+
+.input-div {
+    text-align: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    margin-top: 5%;
+    text-align: center;
+}
+p span{
+    position: relative;
+}
+
+.active {
+    color: white;
+}
+
+.active::before {
+    position: absolute;
+    content: "";
+    height:100%;
+    width: 3px;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #ffd369;
+    animation: blink 1.1s ease-in-out infinite;
+}
+@keyframes blink{
+    50%{ 
+      opacity: 1; 
+    }
+  }
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.hidden
+{
+   visibility: hidden; 
+}
+
+.input-div
+{
+    position: absolute;
+    opacity: 0;
+    z-index: -999;
+}
